@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <AuthProvider>
-          <h1>hi</h1>
+          
           <div className ='App_Nav'>
           </div>
           <h1 className ='App_Title'>FITNESSEXPRESS</h1>
