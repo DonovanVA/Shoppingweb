@@ -1,0 +1,49 @@
+.Shop{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Shop_Header{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.Shop_Items{
+    text-align: center;
+    margin-bottom:430px;
+    border-radius: 1000px;
+    
+    box-sizing: border-box;
+    width: 500px;
+}
+.Shop_Items_Title{
+
+font-size: 40px;
+}
+
+
+
+
+.Shop_Button{
+    content:'';
+    margin-bottom: 30px;
+    border-color:black;
+
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    font-size: 30px;
+    height:70px;
+    width:150px;
+    color:black;
+    top:0;
+    left:0;
+}
+
+.Shop_Button:hover{
+    color:white;
+    cursor:grab;
+    transition: 1s;
+    background-color: black;
+}

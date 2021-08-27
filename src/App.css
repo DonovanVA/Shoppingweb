@@ -1,0 +1,59 @@
+.App {
+  
+ 
+  fill:aqua;
+  height:1900px;
+  color:black;
+  font-family: monospace;
+
+}
+.App_Title{
+  position: absolute;
+  color:yellow;
+  z-index:2;
+  font-weight: bold;
+  top:3%;
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+.App_Nav{
+  background-image: url(Gymbackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:blur(6px);
+  height:300px;
+  width:100%;
+  
+}
+.App_Nav_Items{
+  color:white;
+  font-weight: bold;
+  z-index:2;
+  padding:20px;
+  position:absolute;
+  font-weight:bold;
+  top:0%;
+  background-color: transparent;
+}
+.App_Shopcontainer{
+  background-color: white;
+  height:100%;
+  color:black;
+  margin-top: 20px;
+} 
+.App_footer{
+ bottom:-300px;
+ position:relative;
+ width:100%;
+ height:20px;
+
+
+}
+
+.App_Authentication{
+
+  margin-left: 10px;
+}

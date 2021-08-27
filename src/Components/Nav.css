@@ -1,0 +1,31 @@
+.Nav{
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.Nav_button{
+    margin-top:200px;
+    margin-left:50px;
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Nav_button:hover{
+    cursor: pointer;
+    color:teal;
+    transition: 300ms;
+
+
+}
+
+.Nav_Signup{
+    margin-top:200px;
+    margin-left:700px;
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}

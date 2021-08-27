@@ -1,0 +1,57 @@
+.Iteminfo{
+    color:black;
+    text-align: center;
+    align-items: center;
+    font-family: monospace;
+
+}
+
+.Iteminfo_Counter{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.Iteminfo_Counter_Text{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right:10px;
+    
+}
+.Iteminfo_Counter_Button{
+    
+    background-color:red;
+    color:white;
+    width: 30px;
+    height:30px;
+
+}
+.Iteminfo_Counter_Button:hover{
+    cursor:grab;
+    
+
+}
+
+.Iteminfo_Button{
+    content:'';
+    margin-bottom: 30px;
+    border-color:black;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height:70px;
+    width:150px;
+    color:black;
+   
+}
+
+.Iteminfo_Button:hover{
+    color:white;
+    cursor:grab;
+    transition: 0.1s;
+    background-color: black;
+}
