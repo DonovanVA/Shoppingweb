@@ -1,7 +1,6 @@
 import './Shop.css'
 import {Items} from './Items'
-import Olybarbell from './Olybarbell.jpg'
-import Creatine from './Creatine.jpg'
+
 import { useState } from 'react'
 import './Iteminfo.css'
 import{ Link }from 'react-router-dom'
@@ -42,7 +41,6 @@ const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
     setCount(0)
   };
 
- 
 
   return(
 
@@ -52,10 +50,10 @@ const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
       return(
         
         <div key ={i}>
-          <h1>{val.name}</h1>
-          <img src ={val.image}></img>
-          <p>{val.info}</p>
-          <p>{val.price}</p>
+          <h1 className ='Iteminfo_Title'>{val.name}</h1>
+          <img src ={val.image} height = '800' width = '800'></img>
+          <p className ='Iteminfo_Description'>{val.info}</p>
+          <p className ='Iteminfo_Price'>${val.price}</p>
             <div className ='Iteminfo_Counter'>
               
               
@@ -63,12 +61,12 @@ const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
               <p className='Iteminfo_Counter_Text'>{Count}</p>
               <button onClick={increment} className='Iteminfo_Counter_Button'>+</button>
             </div>
-        <div>
+          <div>
           {Count>0?<Link to='/Tcart'><button onClick={()=>addToCart(val)} className='Iteminfo_Button'>Add to cart</button></Link>:''}
           
           <Link to ='/'><button className='Iteminfo_Button'>Back</button></Link>
           </div>
-          </div>)})}
+        </div>)})}
 
           <div>
           {Cart.filter((val)=>{if(val.name===Item){return val}}).map((val,i)=>{

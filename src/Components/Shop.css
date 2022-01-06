@@ -12,7 +12,7 @@
 
 .Shop_Items{
     text-align: center;
-    margin-bottom:430px;
+    margin-bottom:100px;
     border-radius: 1000px;
     
     box-sizing: border-box;
@@ -20,9 +20,13 @@
 }
 .Shop_Items_Title{
 
-font-size: 40px;
+    font-size: 40px;
 }
+.Shop_Items_Price{
 
+    font-size: 30px;
+    margin: 10px;
+}
 
 
 

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-
+import "./Login.css"
 export default function Login({Logged,setLoggedin}) {
   const emailRef = useRef()
   const passwordRef = useRef()
@@ -29,7 +29,12 @@ export default function Login({Logged,setLoggedin}) {
   return (
 
     <>
-    {Logged?<><h1>logged in</h1><button onClick={()=>setLoggedin(false)}>Logout</button></>:
+    {Logged?
+    <div className='Login'>
+    <h1>logged in</h1>
+    <Link to ='/Tcart'><button className="Login_Button">View cart</button></Link>
+    <button className = "Logout_Button" onClick={()=>setLoggedin(false)}>Logout</button>
+    </div>:
     <>
     <Card>
         <Card.Body>
@@ -44,7 +49,7 @@ export default function Login({Logged,setLoggedin}) {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
-            <Button onClick ={()=>setLoggedin(true)}disabled={loading} className="w-100" type="submit">
+            <Button onClick ={()=>setLoggedin(true)}disabled={loading} className="Login_Buttton" type="submit">
               Log In
             </Button>
           </Form>

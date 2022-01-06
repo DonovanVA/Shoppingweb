@@ -36,7 +36,7 @@ function Tcart({ Cart, setCart,Logged,setLoggedin,Price,setPrice }) {
             
             <h1>{product.quantity}</h1>
             
-            <img src={product.image} alt={product.name} />
+            <img src={product.image} height = '200' width = '200'/>
             <button className ='Tcart_Button' onClick={() => removeFromCart(product)}>
               Remove
             </button>
