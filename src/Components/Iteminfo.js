@@ -51,7 +51,7 @@ const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
         
         <div key ={i}>
           <h1 className ='Iteminfo_Title'>{val.name}</h1>
-          <img src ={val.image} height = '800' width = '800'></img>
+          <img src ={val.image} height = '350' width = '350'></img>
           <p className ='Iteminfo_Description'>{val.info}</p>
           <p className ='Iteminfo_Price'>${val.price}</p>
             <div className ='Iteminfo_Counter'>
