@@ -13,10 +13,10 @@
 .Shop_Items{
     text-align: center;
     margin-bottom:100px;
-    border-radius: 1000px;
+    
     
     box-sizing: border-box;
-    width: 500px;
+    
 }
 .Shop_Items_Title{
 
@@ -50,4 +50,48 @@
     cursor:grab;
     transition: 1s;
     background-color: black;
+}
+
+@media screen and (max-width:900px){
+    .Shop_Header{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .Shop_Items{
+        text-align: center;
+        margin-bottom:33px;
+        
+        
+        box-sizing: border-box;
+        
+    }
+    .Shop_Items_Title{
+    
+        font-size: 12px;
+    }
+    .Shop_Items_Price{
+    
+        font-size: 10px;
+        margin: 4px;
+    }
+    
+    
+    
+    .Shop_Button{
+        content:'';
+        margin-bottom: 10px;
+        border-color:black;
+    
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        font-size: 10px;
+        height:30px;
+        width:50px;
+        color:black;
+        top:0;
+        left:0;
+    }
+
 }

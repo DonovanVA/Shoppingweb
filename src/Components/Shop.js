@@ -24,7 +24,7 @@ return(
             return(
                 <div className = 'Shop_Items' key={i}>
                     <h1 className='Shop_Items_Title'>{item.name}</h1>
-                    <img src={item.image} width = '350' height = '350'></img>
+                    <img src={item.image} width = '300' height = '350'></img>
                     <p className='Shop_Items_Price'>${item.price}</p>
                     <Link to ='/Iteminfo'>
                       <button 

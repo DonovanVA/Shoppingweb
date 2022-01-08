@@ -51,7 +51,7 @@ const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
         
         <div key ={i}>
           <h1 className ='Iteminfo_Title'>{val.name}</h1>
-          <img src ={val.image} height = '350' width = '350'></img>
+          <img src ={val.image} height = '350' width = '300'></img>
           <p className ='Iteminfo_Description'>{val.info}</p>
           <p className ='Iteminfo_Price'>${val.price}</p>
             <div className ='Iteminfo_Counter'>
@@ -61,7 +61,7 @@ const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
               <p className='Iteminfo_Counter_Text'>{Count}</p>
               <button onClick={increment} className='Iteminfo_Counter_Button'>+</button>
             </div>
-          <div>
+          <div className='Iteminfo_wrapper'>
           {Count>0?<Link to='/Tcart'><button onClick={()=>addToCart(val)} className='Iteminfo_Button'>Add to cart</button></Link>:''}
           
           <Link to ='/'><button className='Iteminfo_Button'>Back</button></Link>

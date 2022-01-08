@@ -59,7 +59,7 @@ export default function Login({Logged,setLoggedin}) {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        Join us and become part of the Fitnessexpress family!!<Link to="/signup">Sign up now</Link>
+        Join us and become part of us!<Link to="/signup">Sign up now</Link>
       </div>
       </>}
       
