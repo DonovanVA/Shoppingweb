@@ -11,10 +11,10 @@ return(
     <div className='Nav'>
         
         
-        <Link to ='/'><h1 className = 'Nav_button'>Home</h1></Link>
-        <Link to ='/About'><h1 className = 'Nav_button'>About</h1></Link>
-        <Link to ='/Tcart'><h1 className = 'Nav_button'>View Cart</h1></Link>
-        <Link to ='/login'><h1 className ='Nav_Signup'>Login/Signup</h1></Link>
+        <Link to ='/'><button className = 'Nav_button'>Home</button></Link>
+        <Link to ='/About'><button className = 'Nav_button'>About</button></Link>
+        <Link to ='/Tcart'><button className = 'Nav_button'>View Cart</button></Link>
+        <Link to ='/login'><button className ='Nav_Signup'>Login/Signup</button></Link>
 
     </div>
 )

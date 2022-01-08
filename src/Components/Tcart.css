@@ -27,3 +27,31 @@
     transition: 0.1s;
     background-color: black;
 }
+
+@media screen and (max-width:900px){
+    .Tcart{
+        font-size: 8px;
+        color:black;
+        display:flex;
+        flex-direction: column;
+        margin-left: 8px;
+        
+    }
+    
+    .Tcart_Button{
+        content:'';
+        margin-top:5px;
+        margin-bottom: 10px;
+        border-color:black;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        font-size: 7px;
+        height:30px;
+        width:50px;
+        color:black;
+        top:0;
+        left:0;
+    }
+    
+    
+}

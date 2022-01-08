@@ -9,9 +9,11 @@
 .Nav_button{
     margin-top:200px;
     margin-left:50px;
+    font-weight: 700;
     color:white;
     background-color: transparent;
     text-decoration: none;
+    border-color: transparent;
 }
 
 .Nav_button:hover{
@@ -25,7 +27,22 @@
 .Nav_Signup{
     margin-top:200px;
     margin-left:700px;
+    font-weight: 700;
     color:white;
     background-color: transparent;
     text-decoration: none;
+    border-color: transparent;
+}
+
+@media screen and (max-width:900px){
+    .Nav_button{
+        font-size: 15px;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+    .Nav_Signup{
+        margin-left: 0px;
+        margin-top: 60px;
+        font-size: 15px;
+    }
 }
