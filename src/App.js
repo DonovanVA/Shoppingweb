@@ -4,7 +4,7 @@ import Shop from './Components/Shop';
 import Nav from './Components/Nav'
 import About from './Components/About'
 import Tcart from './Components/Tcart';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext'
 import {Link} from 'react-router-dom'
@@ -17,6 +17,8 @@ import Dashboard from './Components/Dashboard';
 import context from 'react-bootstrap/esm/AccordionContext';
 import StripeContainer from './Stripepayment/StripeContainer';
 import Iteminfo from './Components/Iteminfo';
+import { useHistory} from 'react-router-dom'
+
 
 function App() {
 
@@ -25,6 +27,9 @@ function App() {
   const [Logged,setLoggedin] = useState(false);
   const [Count,setCount] = useState(0);
   const [Price,setPrice] = useState(0);
+  const [refresh,getRefresh] = useState(false)
+  const history = useHistory('/')
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -73,7 +78,7 @@ function App() {
                 </Route>
                 </div>
             </Switch>
-            <p className='App_footer'>Liscence</p>
+            <p className='App_footer'>@Lisence</p>
             </div>
         </AuthProvider>
       </BrowserRouter>

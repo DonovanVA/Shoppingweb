@@ -101,14 +101,14 @@
         align-items: left;
     }
     .Nav_button_menu{
-        margin-top:10px;
+        margin-top:15px;
         margin-left:0px;
         font-weight: 700;
         color:white;
         background-color: transparent;
         text-decoration: none;
         border-color: transparent;
-        font-size: 25px;
+        font-size: 22px;
         
     }
     .Nav_button_menu:hover{

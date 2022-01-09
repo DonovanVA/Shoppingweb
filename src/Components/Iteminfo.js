@@ -1,12 +1,25 @@
 import './Shop.css'
 import {Items} from './Items'
-
+import { useHistory } from 'react-router'
 import { useState } from 'react'
+import { useEffect } from 'react'
 import './Iteminfo.css'
 import{ Link }from 'react-router-dom'
+
+
+
 const Iteminfo=({Item,setItem,Cart,setCart,Count,setCount})=>{
   
+  /*if(window.localStorage.getItem("Itemstate")!=null){
+    window.localStorage.setItem('Itemstate',Item)
+    Item = window.localStorage.getItem('Itemstate')
+
+  }
+
+  else{window.localStorage.setItem('Itemstate',Item)}*/
   
+
+    
   const increment =()=>{
     setCount(++Count)
 
