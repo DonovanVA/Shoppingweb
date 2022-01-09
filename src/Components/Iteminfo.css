@@ -72,14 +72,15 @@
     background-color: black;
 }
 
-@media screen and (max-width:900px){
+
+@media screen and (max-width:500px){
     .Iteminfo_Title{
         font-size: 13px;
         margin-top: 15px;
         margin-bottom: 10px;
     }
     .Iteminfo_Counter_Text{
-        font-size: 10px;
+        font-size: 12px;
         margin-left: 10px;
         margin-right:10px;
         
@@ -114,4 +115,6 @@
         color:black;
        
     }
+
+    
 }

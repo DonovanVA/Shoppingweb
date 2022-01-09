@@ -58,7 +58,7 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1300px){
   .App_Title{
     margin-left: 5px;
     font-size: 25px;

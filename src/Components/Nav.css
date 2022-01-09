@@ -32,16 +32,146 @@
     border-color: transparent;
     font-size: 25px;
 }
+.Nav_Signup:hover{
+    cursor: pointer;
+    color:teal;
+    transition: 300ms;
+}
+.Navbar {
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    display: none;
+  }
+  
+  .Nav-menu {
+    background-color: transparent;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+  }
+  
+  .Nav-menu.active {
+    left: 0;
+    transition: 350ms;
+  }
+  
+  
+  
+  .Nav-menu-items {
+    width: 100%;
+  }
+  
+  .Navbar-toggle {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  span {
+    margin-left: 16px;
+  }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1300px){
     .Nav_button{
         font-size: 15px;
         margin-top: 60px;
         margin-left: 0px;
+        display:none;
     }
+    .Nav_buttons{
+        display:flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .Nav_button_menu{
+        margin-top:10px;
+        margin-left:0px;
+        font-weight: 700;
+        color:white;
+        background-color: transparent;
+        text-decoration: none;
+        border-color: transparent;
+        font-size: 25px;
+        
+    }
+    .Nav_button_menu:hover{
+        cursor:pointer;
+        text-decoration: underline;
+        
+    }
+    
     .Nav_Signup{
         margin-left: 0px;
         margin-top: 60px;
         font-size: 15px;
+        display: none;
     }
+    .Navbar {
+        background-color: transparent;
+        height: 80px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      
+      .menu-bars {
+        margin-top: 50px;
+        margin-left: 0px;
+        font-size: 2rem;
+        background: none;
+        display:block;
+      }
+      
+      .Nav-menu {
+        background-color: rgb(166, 145, 145);
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 850ms;
+      }
+      
+      .Nav-menu.active {
+        left: 0;
+        transition: 350ms;
+      }
+      
+      
+      
+      .Nav-menu-items {
+        width: 100%;
+      }
+      
+      .Navbar-toggle {
+        background-color: transparent;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      
+      span {
+        margin-left: 16px;
+      }
 }
