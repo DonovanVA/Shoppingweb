@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './Tcart.css'
+import { useEffect } from 'react';
+import { useHistory } from 'react-router';
 function Tcart({ Cart, setCart,Logged,setLoggedin,Price,setPrice }) {
   
   const getTotalSum = () => {
